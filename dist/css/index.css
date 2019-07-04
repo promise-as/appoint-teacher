@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.header .assure strong, .title-module .left-icon, .title-module .right-icon, .title-module .text, .appoint-course .content .qr-code .qr-code-item, .appoint-course .content .qr-code .hint { display: inline-block; *zoom: 1; *display: inline; }
+
+.teacher-introduce .content .item { zoom: 1; }
+
+.teacher-introduce .content .item:after { clear: both; }
+
+.teacher-introduce .content .item:before, .teacher-introduce .content .item:after { content: ""; display: table; }
+
+/* 多少行显示省略号 */
+/* 垂直居中，两端对齐 */
+.space-between { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* 垂直居中，水平居中 */
+.space-around { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; }
+
+h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrap { max-width: 10rem; margin: 0 auto; overflow: hidden; background-color: #17b970; }
+
+.header { width: 100%; height: 12rem; background: url("../images/banner.png") no-repeat; background-size: 100% 100%; padding-top: 0.53333rem; padding-left: 0.53333rem; text-align: center; }
+
+.header .logo { display: block; width: 2.36rem; height: 0.76rem; }
+
+.header .tutor { display: block; width: 3.86667rem; height: 0.8rem; line-height: 0.8rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#0dac64), to(#0cd3b0)), -webkit-gradient(linear, left top, left bottom, from(#17b970), to(#17b970)); background-image: linear-gradient(0deg, #0dac64 0%, #0cd3b0 100%), linear-gradient(#17b970, #17b970); background-blend-mode: normal, normal; border-radius: 0.4rem; font-size: 0.37333rem; letter-spacing: 0.02667rem; color: #ffffff; font-weight: bold; margin: 0.50667rem auto; }
+
+.header .assure { font-size: 0.37333rem; line-height: 0.53333rem; color: #ffffff; margin-top: 2.73333rem; }
+
+.header .assure strong { width: 1.14667rem; height: 0.53333rem; background: url("../images/icon_1.png") no-repeat; background-size: 100% 100%; color: #17b970; }
+
+.title-module { text-align: center; margin-top: 0.61333rem; padding-bottom: 0.58667rem; font-weight: bold; }
+
+.title-module .left-icon, .title-module .right-icon { vertical-align: text-top; }
+
+.title-module .left-icon { width: 0.34667rem; height: 0.34667rem; background: url("../images/icon_2.png") no-repeat; background-size: 100% 100%; }
+
+.title-module .text { height: 0.56rem; line-height: 0.56rem; font-size: 0.48rem; color: #ffffff; background: url("../images/icon_4.png") no-repeat bottom; background-size: contain; padding-left: 0.13333rem; padding-right: 0.08rem; }
+
+.title-module .text strong { color: #fff600; }
+
+.title-module .right-icon { width: 0.45333rem; height: 0.33333rem; background: url("../images/icon_3.png") no-repeat; background-size: 100% 100%; }
+
+/* 优师 */
+.best-teacher { padding: 0 0.4rem; }
+
+.best-teacher .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.42667rem 0.50667rem 0.4rem; letter-spacing: 0.02667rem; color: #333333; }
+
+.best-teacher .content p { text-indent: 1em; text-align: justify; font-size: 0.37333rem; line-height: 0.64rem; margin-bottom: 0.26667rem; }
+
+.best-teacher .content p strong { color: #17b970; font-weight: normal; }
+
+/* 特惠 */
+.discounts { padding: 0 0.4rem; }
+
+.discounts .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.28rem 0.4rem 0; }
+
+.discounts .content .item { text-align: center; border-bottom: 1px dashed #18af5c; padding-top: 0.65333rem; padding-bottom: 0.66667rem; }
+
+.discounts .content .item img { width: 2.18667rem; height: 2.18667rem; }
+
+.discounts .content .item .item-title { font-size: 0.42667rem; font-weight: bold; line-height: 0.64rem; letter-spacing: 0.04rem; color: #333333; padding-top: 0.24rem; padding-bottom: 0.08rem; }
+
+.discounts .content .item p { padding: 0 0.8rem; font-size: 0.37333rem; line-height: 0.64rem; letter-spacing: 0.01333rem; color: #333333; }
+
+.discounts .content .item p strong { color: #17b970; }
+
+.discounts .content .item:last-child { border-bottom: none; }
+
+/* 约课 */
+.appoint-course { padding: 0 0.4rem; }
+
+.appoint-course .content { width: 9.2rem; height: 8.37333rem; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.42667rem 0.50667rem 0.4rem; }
+
+.appoint-course .content p { text-align: justify; font-size: 0.37333rem; line-height: 0.64rem; margin-bottom: 0.26667rem; }
+
+.appoint-course .content p strong { color: #17b970; font-weight: normal; }
+
+.appoint-course .content .qr-code { text-align: center; padding: 0.4rem 0; }
+
+.appoint-course .content .qr-code .qr-code-item { width: 2.18667rem; height: 2.18667rem; background: url("../images/qr-code-bg.png") no-repeat; background-size: 100% 100%; margin-left: 0.58667rem; margin-right: 0.58667rem; padding: 0.08rem; }
+
+.appoint-course .content .qr-code .hint { font-size: 0.37333rem; line-height: 0.64rem; letter-spacing: 0.02667rem; color: #17b970; padding-top: 0.4rem; }
+
+/* 师咨介绍 */
+.teacher-introduce { padding: 0 0.4rem; }
+
+.teacher-introduce .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.53333rem 0.4rem 0.26667rem; }
+
+.teacher-introduce .content .item { padding-bottom: 0.53333rem; }
+
+.teacher-introduce .content .item .avatar { width: 2rem; height: 2rem; background-color: rgba(23, 185, 112, 0.2); padding: 0.26667rem; border-radius: 50%; float: left; }
+
+.teacher-introduce .content .item .detail { width: 6rem; float: left; margin-left: 0.2rem; }
+
+.teacher-introduce .content .item .detail .name { font-size: 0.42667rem; font-weight: bold; line-height: 0.64rem; letter-spacing: 0.04rem; color: #333333; margin-right: 0.13333rem; }
+
+.teacher-introduce .content .item .detail .honor { height: 0.53333rem; line-height: 0.53333rem; background-color: #effff8; border-radius: 0.05333rem; border: solid 1px #17b970; padding: 0 0.17333rem; color: #17b970; }
+
+.teacher-introduce .content .item .detail p { font-size: 0.37333rem; line-height: 0.58667rem; letter-spacing: 0.02667rem; color: #666666; text-align: justify; padding-top: 0.08rem; }
+
+.advantage { padding: 0 0.4rem; }
+
+.advantage .content { width: 9.2rem; height: 23.81333rem; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.53333rem 0.26667rem 0.26667rem; }
+
+.advantage .content .adv-title { font-size: 0.42667rem; font-weight: bold; line-height: 1.2rem; letter-spacing: 0.02667rem; color: #333333; text-align: center; }
+
+.advantage .content .adv-title strong { color: #17b970; background: url("../images/icon_7.png") no-repeat bottom; background-size: contain; }
+
+.advantage .content p { font-size: 0.37333rem; line-height: 0.58667rem; letter-spacing: 0.02667rem; color: #666666; text-align: justify; padding-top: 0.08rem; padding-left: 0.13333rem; padding-right: 0.13333rem; }
+
+.advantage .content .detail { margin-top: 0.26667rem; }
+
+.advantage .content .detail .item { margin-bottom: 0.13333rem; }
+
+.advantage .content .detail .item .item-title { width: 2.84rem; height: 1.21333rem; background: url("../images/step_1.png") no-repeat left; background-size: 100% 100%; padding: 0.4rem 0.06667rem 0.06667rem 0.26667rem; font-size: 0.42667rem; font-weight: bold; line-height: 0.74667rem; letter-spacing: 0.04rem; color: #ffffff; text-align: center; margin-bottom: 0.09333rem; }
+
+.advantage .content .detail .item .text { height: 2.4rem; border-left: 1px dashed #17b970; margin-left: 0.26667rem; }
+
+.advantage .content .detail .item .text p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
+
+.advantage .content .detail .item:nth-of-type(2) .item-title { background: url("../images/step_2.png") no-repeat left; background-size: 100% 100%; }
+
+.advantage .content .detail .item:nth-of-type(3) .item-title { background: url("../images/step_3.png") no-repeat left; background-size: 100% 100%; }
+
+.advantage .content .detail .item:nth-of-type(4) .item-title { background: url("../images/step_4.png") no-repeat left; background-size: 100% 100%; }
+
+.advantage .content .feature { width: 8.4rem; background: url("../images/feature.png") no-repeat; background-size: 100% 100%; margin: 0 auto; padding-top: 0.4rem; padding-left: 0.42667rem; padding-bottom: 0.4rem; }
+
+.advantage .content .feature .feature-title { font-size: 0.42667rem; font-weight: bold; line-height: 0.64rem; letter-spacing: 0.01333rem; color: #333333; }
+
+.advantage .content .feature .feature-title strong { background: url("../images/icon_7.png") no-repeat bottom; background-size: contain; color: #17b970; padding-left: 0.13333rem; }
+
+.advantage .content .feature p { font-size: 0.37333rem; font-weight: normal; line-height: 0.64rem; letter-spacing: 0.01333rem; color: #17b970; padding-left: 0; }

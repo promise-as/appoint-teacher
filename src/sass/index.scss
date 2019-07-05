@@ -66,7 +66,11 @@ h1, h2, h3, div, p, span, strong, a {
   max-width: pr(750px);
   margin: 0 auto;
   overflow: hidden;
-  background-color: $txt-color;
+  //background-color: $txt-color;
+  background: url("../images/wrap-bg.png") $txt-color repeat-y;
+  background-size: contain;
+
+  padding-bottom: pr(148px);
 }
 
 .header {
@@ -296,6 +300,7 @@ h1, h2, h3, div, p, span, strong, a {
 /* 师咨介绍 */
 .teacher-introduce {
   padding: 0 $padding-size;
+
   .content {
     width: 100%;
     //width: pr(690px);
@@ -303,9 +308,11 @@ h1, h2, h3, div, p, span, strong, a {
     background-color: #ffffff;
     border-radius: pr(10px);
     padding: pr(40px) pr(30px) pr(20px);
+
     .item {
       @extend %clearfix;
       padding-bottom: pr(40px);
+
       .avatar {
         width: pr(150px);
         height: pr(150px);
@@ -314,11 +321,13 @@ h1, h2, h3, div, p, span, strong, a {
         border-radius: 50%;
         float: left;
       }
-      .detail{
+
+      .detail {
         width: pr(450px);
         float: left;
         margin-left: pr(15px);
-        .name{
+
+        .name {
           font-size: pr(32px);
           font-weight: bold;
           line-height: pr(48px);
@@ -326,7 +335,8 @@ h1, h2, h3, div, p, span, strong, a {
           color: #333333;
           margin-right: pr(10px);
         }
-        .honor{
+
+        .honor {
           //width: pr(228px);
           height: pr(40px);
           line-height: pr(40px);
@@ -336,7 +346,8 @@ h1, h2, h3, div, p, span, strong, a {
           padding: 0 pr(13px);
           color: $txt-color;
         }
-        p{
+
+        p {
           font-size: pr(28px);
           line-height: pr(44px);
           letter-spacing: pr(2px);
@@ -349,29 +360,33 @@ h1, h2, h3, div, p, span, strong, a {
   }
 }
 
-
-.advantage{
+/* 优势 */
+.advantage {
   padding: 0 $padding-size;
-  .content{
+
+  .content {
     width: pr(690px);
     height: pr(1786px);
     background-color: #ffffff;
     border-radius: pr(10px);
     padding: pr(40px) pr(20px) pr(20px);
-    .adv-title{
+
+    .adv-title {
       font-size: pr(32px);
       font-weight: bold;
       line-height: pr(90px);
       letter-spacing: pr(2px);
       color: #333333;
       text-align: center;
-      strong{
+
+      strong {
         color: $txt-color;
         background: url("../images/icon_7.png") no-repeat bottom;
         background-size: contain;
       }
     }
-    p{
+
+    p {
       font-size: pr(28px);
       line-height: pr(44px);
       letter-spacing: pr(2px);
@@ -381,10 +396,13 @@ h1, h2, h3, div, p, span, strong, a {
       padding-left: pr(10px);
       padding-right: pr(10px);
     }
-    .detail{
+
+    .detail {
       margin-top: pr(20px);
-      .item{
+
+      .item {
         margin-bottom: pr(10px);
+
         .item-title {
           width: pr(213px);
           height: pr(91px);
@@ -399,36 +417,41 @@ h1, h2, h3, div, p, span, strong, a {
           text-align: center;
           margin-bottom: pr(7px);
         }
-        .text{
+
+        .text {
           height: pr(180px);
           border-left: 1px dashed $txt-color;
           margin-left: pr(20px);
           //padding-bottom: pr(44px);
-          p{
+          p {
             @include ells(4);
           }
         }
-        &:nth-of-type(2){
-          .item-title{
+
+        &:nth-of-type(2) {
+          .item-title {
             background: url("../images/step_2.png") no-repeat left;
             background-size: 100% 100%;
           }
         }
-        &:nth-of-type(3){
-          .item-title{
+
+        &:nth-of-type(3) {
+          .item-title {
             background: url("../images/step_3.png") no-repeat left;
             background-size: 100% 100%;
           }
         }
-        &:nth-of-type(4){
-          .item-title{
+
+        &:nth-of-type(4) {
+          .item-title {
             background: url("../images/step_4.png") no-repeat left;
             background-size: 100% 100%;
           }
         }
       }
     }
-    .feature{
+
+    .feature {
       width: pr(630px);
       //height: pr(260px);
       background: url("../images/feature.png") no-repeat;
@@ -437,7 +460,8 @@ h1, h2, h3, div, p, span, strong, a {
       padding-top: pr(30px);
       padding-left: pr(32px);
       padding-bottom: pr(30px);
-      .feature-title{
+
+      .feature-title {
         //width: pr(369px);
         //height: pr(79px);
         font-size: pr(32px);
@@ -445,20 +469,505 @@ h1, h2, h3, div, p, span, strong, a {
         line-height: pr(48px);
         letter-spacing: pr(1px);
         color: #333333;
-        strong{
+
+        strong {
           background: url("../images/icon_7.png") no-repeat bottom;
           background-size: contain;
           color: $txt-color;
           padding-left: pr(10px);
         }
       }
-      p{
+
+      p {
         font-size: pr(28px);
         font-weight: normal;
         line-height: pr(48px);
         letter-spacing: pr(1px);
         color: $txt-color;
         padding-left: 0;
+      }
+    }
+  }
+}
+
+/* 指导 */
+.guidance {
+  padding: 0 $padding-size;
+  .content {
+    width: 100%;
+    //width: pr(690px);
+    //height: pr(993px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(40px) pr(50px);
+    .guidance-title {
+      font-size: pr(32px);
+      font-weight: bold;
+      line-height: pr(52px);
+      letter-spacing: pr(3px);
+      color: #333333;
+      text-align: center;
+      margin-bottom: pr(30px);
+      strong {
+        color: $txt-color;
+        background: url("../images/icon_7.png") no-repeat bottom;
+        background-size: contain;
+      }
+    }
+    .item {
+      width: 100%;
+      height: pr(68px);
+      background-color: #e5fff4;
+      border-radius: pr(34px);
+      @extend %clearfix;
+      margin-bottom: pr(30px);
+      .num {
+        width: pr(88px);
+        height: pr(88px);
+        background-color: rgba(23, 185, 112, 0.2);
+        border-radius: 50%;
+        margin-top: pr(-10px);
+        padding: pr(10px);
+        text-align: center;
+        float: left;
+        span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: $txt-color;
+          border-radius: 50%;
+          line-height: pr(68px);
+          font-size: pr(40px);
+          font-weight: bold;
+          color: $bg-color;
+        }
+      }
+      .text{
+        float: left;
+        width: 76%;
+        margin-left: pr(35px);
+        font-size: pr(30px);
+        line-height: pr(68px);
+        letter-spacing: pr(2px);
+        color: $txt-color;
+        @extend %one;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/* 技巧 */
+.skill{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(690px);
+    //height: pr(1238px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(50px) pr(30px) pr(20px);
+    .item{
+      margin-bottom: pr(50px);
+      .item-title{
+        //width: pr(500px);
+        height: pr(60px);
+        background: url("../images/icon_8.png") no-repeat;
+        background-size: 100% 100%;
+        padding-left: pr(28px);
+        padding-right: pr(38px);
+        line-height: pr(60px);
+        @extend %in-b;
+        color: #ffffff;
+        strong{
+          color: $bg-color;
+        }
+      }
+      .detail{
+        width: pr(630px);
+        //height: pr(603px);
+        background: url("../images/skill.png") no-repeat #e5fff4 bottom;
+        background-size: contain;
+        @extend %clearfix;
+        padding: pr(48px) pr(29px) pr(48px) pr(48px);
+        font-size: pr(28px);
+        line-height: pr(48px);
+        border-radius: pr(10px);
+        .detail-title{
+          float: left;
+          color: $txt-color;
+          margin-left: pr(-10px);
+
+        }
+        .detail-text{
+          float: left;
+          color: #333333;
+          margin-bottom: pr(4px);
+
+        }
+        .sprint{
+          width: 69%;
+        }
+      }
+    }
+  }
+}
+
+/* 高效 */
+.efficient{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(690px);
+    //height: pr(1070px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(50px) pr(30px) pr(20px);
+    .efficient-title{
+      font-size: pr(32px);
+      font-weight: bold;
+      line-height: pr(42px);
+      letter-spacing: pr(3px);
+      color: #333333;
+      text-align: center;
+      margin-bottom: pr(20px);
+      strong{
+        color: $txt-color;
+        background: url("../images/icon_7.png") no-repeat bottom;
+        background-size: contain;
+      }
+    }
+    .intro{
+      font-size: pr(28px);
+      line-height: pr(42px);
+      letter-spacing: pr(3px);
+      color: #333333;
+      text-align: center;
+      strong{
+        color: $txt-color;
+      }
+    }
+    .detail{
+      margin-top: pr(20px);
+      .item{
+        margin-bottom: pr(40px);
+        .item-top{
+          //width: pr(630px);
+          //height: pr(170px);
+          //background-color: #e5fff3;
+          //border-radius: pr(10px);
+          //border: solid 1px #2db76d;
+          background: url("../images/study.png") no-repeat;
+          background-size: 100% 100%;
+          padding: pr(26px);
+          margin-bottom: pr(10px);
+          p{
+            font-size: pr(30px);
+            line-height: pr(48px);
+            letter-spacing: pr(1px);
+            color: #333333;
+          }
+          .formula{
+            color: $txt-color;
+            strong{
+              background: url("../images/icon_7.png") no-repeat bottom;
+              background-size: contain;
+            }
+          }
+        }
+        .item-bottom{
+          //width: pr(604px);
+          font-size: pr(28px);
+          line-height: pr(48px);
+          //letter-spacing: pr(2px);
+          color: #666666;
+          text-align: justify;
+        }
+        &:nth-of-type(2){
+          .item-top{
+            background: url("../images/ability.png") no-repeat;
+            background-size: 100% 100%;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+/* 对比 */
+.compare{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(690px);
+    height: pr(622px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(50px) pr(30px);
+    .detail{
+      width: 100%;
+      height: 100%;
+      background-color: #e5fff4;
+      border-radius: pr(10px);
+      @extend %clearfix;
+      //position: relative;
+      .column{
+        float: left;
+        span{
+          //display: block;
+          height: pr(82px);
+          text-align: center;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &.good{
+          border-radius: pr(10px);
+          background-color: $txt-color;
+          //position: absolute;
+          span{
+            height: pr(86px);
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            &:last-child{
+              border-bottom: none;
+            }
+          }
+        }
+        &.normal{
+          span{
+            border-bottom: 1px solid #ffffff;
+            &:last-child{
+              border-bottom: none;
+            }
+          }
+        }
+        &:nth-of-type(1){
+          width: 15%;
+        }
+        &:nth-of-type(2){
+          width: 42%;
+        }
+        &:nth-of-type(3){
+          width: 42%;
+        }
+      }
+    }
+  }
+}
+
+/* 案例 */
+.case{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(700px);
+    //height: pr(680px);
+    background-color: #85deae;
+    border-radius: pr(10px);
+    padding: pr(5px);
+    .thead{
+      height: pr(66px);
+      line-height: pr(66px);
+      border-top-left-radius: pr(10px);
+      border-top-right-radius: pr(10px);
+      background-color: $bg-color;
+      color: $txt-color;
+      border-bottom: 1px solid #85deae;
+      span{
+        display: block;
+        width: 17%;
+        float: left;
+        border-right: 1px solid #85deae;
+        text-align: center;
+        &:last-child{
+          width: 32%;
+          border-right: none;
+        }
+      }
+    }
+    .tbody{
+      background-color: #ffffff;
+      border-bottom-left-radius: pr(10px);
+      border-bottom-right-radius: pr(10px);
+      .row{
+        border-bottom: 1px solid #85deae;
+        @extend %clearfix;
+        span{
+          //display: block;
+          width: 17%;
+          height: pr(66px);
+          float: left;
+          border-right: 1px solid #85deae;
+          text-align: center;
+          color: $txt-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:nth-child(odd){
+            background-color: #f0fff9;
+          }
+          &:last-child{
+            width: 32%;
+            border-right: none;
+          }
+        }
+        &:last-child{
+          border-bottom: none;
+          span{
+            &:first-child{
+              border-bottom-left-radius: pr(10px);
+            }
+            &:last-child{
+              border-bottom-right-radius: pr(10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 关于我们 */
+.about-us{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(686px);
+    //height: pr(1244px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(32px) pr(28px);
+    .bg{
+      margin-bottom: pr(30px);
+    }
+    p{
+      text-indent: 1em;
+      font-size: pr(28px);
+      line-height: pr(48px);
+      letter-spacing: pr(2px);
+      color: #333333;
+      margin-bottom: pr(5px);
+      strong{
+        color: $txt-color;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+/* 联系我们 */
+.contact-us{
+  padding: 0 $padding-size;
+  .content{
+    width: 100%;
+    //width: pr(686px);
+    //height: pr(488px);
+    background-color: #ffffff;
+    border-radius: pr(10px);
+    padding: pr(32px) pr(28px);
+    .row{
+      @extend %clearfix;
+      display: flex;
+      align-items: center;
+      .icon{
+        display: block;
+        width: pr(18px);
+        height: pr(24px);
+        background: url("../images/icon_9.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      span{
+        font-size: pr(28px);
+        line-height: pr(48px);
+        letter-spacing: pr(1px);
+        color: #333333;
+        margin-left: pr(12px);
+      }
+      &:nth-of-type(2){
+        .icon{
+          width: pr(18px);
+          height: pr(18px);
+          background: url("../images/icon_10.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      &:nth-of-type(3){
+        .icon{
+          width: pr(20px);
+          height: pr(16px);
+          background: url("../images/icon_11.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .qr-code {
+      padding: $padding-size 0 pr(20px);
+      display: flex;
+      justify-content: space-between;
+      .qr-code-item {
+        text-align: center;
+        .detail{
+          @extend %in-b;
+          width: pr(162px);
+          height: pr(162px);
+          background: url("../images/qr-code-bg.png") no-repeat;
+          background-size: 100% 100%;
+          padding: pr(6px);
+        }
+        span{
+          display: block;
+          font-size: pr(28px);
+          line-height: pr(48px);
+          letter-spacing: pr(2px);
+          color: $txt-color;
+          padding-top: pr(20px);
+        }
+      }
+
+
+    }
+  }
+}
+
+/* 底部固定 */
+.footer-fixed{
+  width: pr(750px);
+  @extend %clearfix;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  .item{
+    width: 50%;
+    height: pr(98px);
+    line-height: pr(98px);
+    background-color: #009846;
+    float: left;
+    //text-align: center;
+    font-size: pr(32px);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+      @extend %in-b;
+      width: pr(34px);
+      height: pr(36px);
+      background: url("../images/icon_12.png") no-repeat;
+      background-size: 100% 100%;
+      vertical-align: middle;
+      margin-right: pr(16px);
+    }
+    &:nth-of-type(2){
+      background-color: $bg-color;
+      color: $txt-color;
+      .icon{
+        width: pr(36px);
+        height: pr(36px);
+        background: url("../images/icon_13.png") no-repeat;
+        background-size: 100% 100%;
       }
     }
   }

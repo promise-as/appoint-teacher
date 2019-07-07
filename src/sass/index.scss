@@ -97,14 +97,21 @@ h1, h2, h3, div, p, span, strong, a {
         #0dac64 0%,
         #0cd3b0 100%),
     linear-gradient($txt-color, $txt-color);
-    background-blend-mode: normal,
-    normal;
     border-radius: pr(30px);
     font-size: pr(28px);
     letter-spacing: pr(2px);
     color: #ffffff;
     font-weight: bold;
     margin: pr(38px) auto;
+    &:before, &:after{
+      @extend %in-b;
+      content: '';
+      width: pr(6px);
+      height: pr(6px);
+      background-color: #ffffff;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
   }
 
   .assure {
@@ -189,7 +196,7 @@ h1, h2, h3, div, p, span, strong, a {
 
       strong {
         color: $txt-color;
-        font-weight: normal;
+        //font-weight: normal;
       }
     }
   }
@@ -198,26 +205,21 @@ h1, h2, h3, div, p, span, strong, a {
 /* 特惠 */
 .discounts {
   padding: 0 $padding-size;
-
   .content {
     width: 100%;
-    //width: pr(690px);
     //height: pr(888px);
     background-color: #ffffff;
     border-radius: pr(10px);
     padding: pr(21px) $padding-size 0;
-
     .item {
       text-align: center;
       border-bottom: 1px dashed #18af5c;
       padding-top: pr(49px);
       padding-bottom: pr(50px);
-
       img {
         width: pr(164px);
         height: pr(164px);
       }
-
       .item-title {
         font-size: pr(32px);
         font-weight: bold;
@@ -227,16 +229,15 @@ h1, h2, h3, div, p, span, strong, a {
         padding-top: pr(18px);
         padding-bottom: pr(6px);
       }
-
       p {
         padding: 0 pr(60px);
         font-size: pr(28px);
         line-height: pr(48px);
         letter-spacing: pr(1px);
         color: #333333;
-
         strong {
           color: $txt-color;
+          font-weight: bold;
         }
       }
 
@@ -250,30 +251,26 @@ h1, h2, h3, div, p, span, strong, a {
 /* 约课 */
 .appoint-course {
   padding: 0 $padding-size;
-
   .content {
-    width: pr(690px);
-    height: pr(628px);
+    width: 100%;
+    //width: pr(690px);
+    //height: pr(628px);
     background-color: #ffffff;
     border-radius: pr(10px);
     padding: pr(32px) pr(38px) pr(30px);
-
     p {
       text-align: justify;
       font-size: pr(28px);
       line-height: pr(48px);
       margin-bottom: pr(20px);
-
       strong {
         color: $txt-color;
-        font-weight: normal;
+        font-weight: bold;
       }
     }
-
     .qr-code {
       text-align: center;
       padding: $padding-size 0;
-
       .qr-code-item {
         @extend %in-b;
         width: pr(164px);
@@ -284,7 +281,6 @@ h1, h2, h3, div, p, span, strong, a {
         margin-right: pr(44px);
         padding: pr(6px);
       }
-
       .hint {
         @extend %in-b;
         font-size: pr(28px);
@@ -330,14 +326,14 @@ h1, h2, h3, div, p, span, strong, a {
         .name {
           font-size: pr(32px);
           font-weight: bold;
-          line-height: pr(48px);
+          line-height: pr(32px);
           letter-spacing: pr(3px);
           color: #333333;
           margin-right: pr(10px);
         }
 
         .honor {
-          //width: pr(228px);
+          @extend %in-b;
           height: pr(40px);
           line-height: pr(40px);
           background-color: #effff8;
@@ -363,14 +359,13 @@ h1, h2, h3, div, p, span, strong, a {
 /* 优势 */
 .advantage {
   padding: 0 $padding-size;
-
   .content {
-    width: pr(690px);
-    height: pr(1786px);
+    width: 100%;
+    //width: pr(690px);
+    //height: pr(1786px);
     background-color: #ffffff;
     border-radius: pr(10px);
-    padding: pr(40px) pr(20px) pr(20px);
-
+    padding: pr(40px) pr(30px) pr(50px);
     .adv-title {
       font-size: pr(32px);
       font-weight: bold;
@@ -378,14 +373,12 @@ h1, h2, h3, div, p, span, strong, a {
       letter-spacing: pr(2px);
       color: #333333;
       text-align: center;
-
       strong {
         color: $txt-color;
         background: url("../images/icon_7.png") no-repeat bottom;
         background-size: contain;
       }
     }
-
     p {
       font-size: pr(28px);
       line-height: pr(44px);
@@ -393,8 +386,8 @@ h1, h2, h3, div, p, span, strong, a {
       color: #666666;
       text-align: justify;
       padding-top: pr(6px);
-      padding-left: pr(10px);
-      padding-right: pr(10px);
+      padding-left: pr(30px);
+      padding-right: pr(30px);
     }
 
     .detail {
@@ -501,18 +494,24 @@ h1, h2, h3, div, p, span, strong, a {
     border-radius: pr(10px);
     padding: pr(40px) pr(50px);
     .guidance-title {
+      width: pr(480px);
       font-size: pr(32px);
       font-weight: bold;
       line-height: pr(52px);
-      letter-spacing: pr(3px);
+      //letter-spacing: pr(3px);
       color: #333333;
       text-align: center;
       margin-bottom: pr(30px);
+      margin-left: auto;
+      margin-right: auto;
       strong {
         color: $txt-color;
         background: url("../images/icon_7.png") no-repeat bottom;
         background-size: contain;
       }
+    }
+    .mentality{
+      width: 100%;
     }
     .item {
       width: 100%;
@@ -572,11 +571,11 @@ h1, h2, h3, div, p, span, strong, a {
       .item-title{
         //width: pr(500px);
         height: pr(60px);
+        line-height: pr(60px);
         background: url("../images/icon_8.png") no-repeat;
         background-size: 100% 100%;
         padding-left: pr(28px);
         padding-right: pr(38px);
-        line-height: pr(60px);
         @extend %in-b;
         color: #ffffff;
         strong{
@@ -584,7 +583,7 @@ h1, h2, h3, div, p, span, strong, a {
         }
       }
       .detail{
-        width: pr(630px);
+        width: 100%;
         //height: pr(603px);
         background: url("../images/skill.png") no-repeat #e5fff4 bottom;
         background-size: contain;
@@ -702,56 +701,75 @@ h1, h2, h3, div, p, span, strong, a {
     width: 100%;
     //width: pr(690px);
     height: pr(622px);
+    position: relative;
+    @extend %clearfix;
     background-color: #ffffff;
     border-radius: pr(10px);
-    padding: pr(50px) pr(30px);
+    padding: pr(62px) pr(30px) pr(50px);
     .detail{
       width: 100%;
       height: 100%;
-      background-color: #e5fff4;
       border-radius: pr(10px);
       @extend %clearfix;
-      //position: relative;
+      position: relative;
       .column{
-        float: left;
+        background-color: #e5fff4;
+        position: absolute;
         span{
-          //display: block;
           height: pr(82px);
-          text-align: center;
-
+          //display: block;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-        &.good{
-          border-radius: pr(10px);
-          background-color: $txt-color;
-          //position: absolute;
-          span{
-            height: pr(86px);
-            color: #ffffff;
-            border-bottom: 1px solid #ffffff;
-            &:last-child{
-              border-bottom: none;
-            }
+          text-align: center;
+          //background-color: #e5fff4;
+          strong{
+            color: $bg-color;
           }
         }
-        &.normal{
-          span{
-            border-bottom: 1px solid #ffffff;
-            &:last-child{
-              border-bottom: none;
-            }
+      }
+      .contrast{
+        width: 15%;
+        border-top-left-radius: pr(10px);
+        border-bottom-left-radius: pr(10px);
+        top: 0;
+        left: 0;
+      }
+      .good{
+        width: 43%;
+        left: 15%;
+        top: pr(-12px);
+        border-radius: pr(10px);
+        background-color: $txt-color;
+        z-index: 100;
+        span{
+          height: pr(86px);
+          color: #ffffff;
+          border-bottom: 1px solid #ffffff;
+          padding-left: pr(22px);
+          padding-right: pr(22px);
+          &:last-child{
+            border-bottom: none;
           }
         }
-        &:nth-of-type(1){
-          width: 15%;
-        }
-        &:nth-of-type(2){
-          width: 42%;
-        }
-        &:nth-of-type(3){
-          width: 42%;
+      }
+      .normal{
+        width: 42%;
+        border-top-right-radius: pr(10px);
+        border-bottom-right-radius: pr(10px);
+        top: 0;
+        right: 0;
+        span{
+          border-bottom: 1px solid #ffffff;
+          color: #999999;
+          padding-left: pr(22px);
+          padding-right: pr(22px);
+          &:first-child{
+            color: #333333;
+          }
+          &:last-child{
+            border-bottom: none;
+          }
         }
       }
     }

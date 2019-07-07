@@ -1,13 +1,13 @@
 @charset "UTF-8";
-.header .assure strong, .title-module .left-icon, .title-module .right-icon, .title-module .text, .appoint-course .content .qr-code .qr-code-item, .appoint-course .content .qr-code .hint, .skill .content .item .item-title, .contact-us .content .qr-code .qr-code-item .detail, .footer-fixed .item .icon { display: inline-block; *zoom: 1; *display: inline; }
+.header .tutor:before, .header .tutor:after, .header .assure strong, .title-module .left-icon, .title-module .right-icon, .title-module .text, .appoint-course .content .qr-code .qr-code-item, .appoint-course .content .qr-code .hint, .teacher-introduce .content .item .detail .honor, .skill .content .item .item-title, .contact-us .content .qr-code .qr-code-item .detail, .footer-fixed .item .icon { display: inline-block; *zoom: 1; *display: inline; }
 
 .guidance .content .item .text { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
-.teacher-introduce .content .item, .guidance .content .item, .skill .content .item .detail, .compare .content .detail, .case .content .tbody .row, .contact-us .content .row, .footer-fixed { zoom: 1; }
+.teacher-introduce .content .item, .guidance .content .item, .skill .content .item .detail, .compare .content, .compare .content .detail, .case .content .tbody .row, .contact-us .content .row, .footer-fixed { zoom: 1; }
 
-.teacher-introduce .content .item:after, .guidance .content .item:after, .skill .content .item .detail:after, .compare .content .detail:after, .case .content .tbody .row:after, .contact-us .content .row:after, .footer-fixed:after { clear: both; }
+.teacher-introduce .content .item:after, .guidance .content .item:after, .skill .content .item .detail:after, .compare .content:after, .compare .content .detail:after, .case .content .tbody .row:after, .contact-us .content .row:after, .footer-fixed:after { clear: both; }
 
-.teacher-introduce .content .item:before, .guidance .content .item:before, .skill .content .item .detail:before, .compare .content .detail:before, .case .content .tbody .row:before, .contact-us .content .row:before, .footer-fixed:before, .teacher-introduce .content .item:after, .guidance .content .item:after, .skill .content .item .detail:after, .compare .content .detail:after, .case .content .tbody .row:after, .contact-us .content .row:after, .footer-fixed:after { content: ""; display: table; }
+.teacher-introduce .content .item:before, .guidance .content .item:before, .skill .content .item .detail:before, .compare .content:before, .compare .content .detail:before, .case .content .tbody .row:before, .contact-us .content .row:before, .footer-fixed:before, .teacher-introduce .content .item:after, .guidance .content .item:after, .skill .content .item .detail:after, .compare .content:after, .compare .content .detail:after, .case .content .tbody .row:after, .contact-us .content .row:after, .footer-fixed:after { content: ""; display: table; }
 
 /* 多少行显示省略号 */
 /* 垂直居中，两端对齐 */
@@ -24,7 +24,9 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .header .logo { display: block; width: 2.36rem; height: 0.76rem; }
 
-.header .tutor { display: block; width: 3.86667rem; height: 0.8rem; line-height: 0.8rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#0dac64), to(#0cd3b0)), -webkit-gradient(linear, left top, left bottom, from(#17b970), to(#17b970)); background-image: linear-gradient(0deg, #0dac64 0%, #0cd3b0 100%), linear-gradient(#17b970, #17b970); background-blend-mode: normal, normal; border-radius: 0.4rem; font-size: 0.37333rem; letter-spacing: 0.02667rem; color: #ffffff; font-weight: bold; margin: 0.50667rem auto; }
+.header .tutor { display: block; width: 3.86667rem; height: 0.8rem; line-height: 0.8rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#0dac64), to(#0cd3b0)), -webkit-gradient(linear, left top, left bottom, from(#17b970), to(#17b970)); background-image: linear-gradient(0deg, #0dac64 0%, #0cd3b0 100%), linear-gradient(#17b970, #17b970); border-radius: 0.4rem; font-size: 0.37333rem; letter-spacing: 0.02667rem; color: #ffffff; font-weight: bold; margin: 0.50667rem auto; }
+
+.header .tutor:before, .header .tutor:after { content: ''; width: 0.08rem; height: 0.08rem; background-color: #ffffff; vertical-align: middle; border-radius: 50%; }
 
 .header .assure { font-size: 0.37333rem; line-height: 0.53333rem; color: #ffffff; margin-top: 2.73333rem; }
 
@@ -49,7 +51,7 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .best-teacher .content p { text-indent: 1em; text-align: justify; font-size: 0.37333rem; line-height: 0.64rem; margin-bottom: 0.26667rem; }
 
-.best-teacher .content p strong { color: #17b970; font-weight: normal; }
+.best-teacher .content p strong { color: #17b970; }
 
 /* 特惠 */
 .discounts { padding: 0 0.4rem; }
@@ -64,18 +66,18 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .discounts .content .item p { padding: 0 0.8rem; font-size: 0.37333rem; line-height: 0.64rem; letter-spacing: 0.01333rem; color: #333333; }
 
-.discounts .content .item p strong { color: #17b970; }
+.discounts .content .item p strong { color: #17b970; font-weight: bold; }
 
 .discounts .content .item:last-child { border-bottom: none; }
 
 /* 约课 */
 .appoint-course { padding: 0 0.4rem; }
 
-.appoint-course .content { width: 9.2rem; height: 8.37333rem; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.42667rem 0.50667rem 0.4rem; }
+.appoint-course .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.42667rem 0.50667rem 0.4rem; }
 
 .appoint-course .content p { text-align: justify; font-size: 0.37333rem; line-height: 0.64rem; margin-bottom: 0.26667rem; }
 
-.appoint-course .content p strong { color: #17b970; font-weight: normal; }
+.appoint-course .content p strong { color: #17b970; font-weight: bold; }
 
 .appoint-course .content .qr-code { text-align: center; padding: 0.4rem 0; }
 
@@ -94,7 +96,7 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .teacher-introduce .content .item .detail { width: 6rem; float: left; margin-left: 0.2rem; }
 
-.teacher-introduce .content .item .detail .name { font-size: 0.42667rem; font-weight: bold; line-height: 0.64rem; letter-spacing: 0.04rem; color: #333333; margin-right: 0.13333rem; }
+.teacher-introduce .content .item .detail .name { font-size: 0.42667rem; font-weight: bold; line-height: 0.42667rem; letter-spacing: 0.04rem; color: #333333; margin-right: 0.13333rem; }
 
 .teacher-introduce .content .item .detail .honor { height: 0.53333rem; line-height: 0.53333rem; background-color: #effff8; border-radius: 0.05333rem; border: solid 1px #17b970; padding: 0 0.17333rem; color: #17b970; }
 
@@ -103,13 +105,13 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 /* 优势 */
 .advantage { padding: 0 0.4rem; }
 
-.advantage .content { width: 9.2rem; height: 23.81333rem; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.53333rem 0.26667rem 0.26667rem; }
+.advantage .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.53333rem 0.4rem 0.66667rem; }
 
 .advantage .content .adv-title { font-size: 0.42667rem; font-weight: bold; line-height: 1.2rem; letter-spacing: 0.02667rem; color: #333333; text-align: center; }
 
 .advantage .content .adv-title strong { color: #17b970; background: url("../images/icon_7.png") no-repeat bottom; background-size: contain; }
 
-.advantage .content p { font-size: 0.37333rem; line-height: 0.58667rem; letter-spacing: 0.02667rem; color: #666666; text-align: justify; padding-top: 0.08rem; padding-left: 0.13333rem; padding-right: 0.13333rem; }
+.advantage .content p { font-size: 0.37333rem; line-height: 0.58667rem; letter-spacing: 0.02667rem; color: #666666; text-align: justify; padding-top: 0.08rem; padding-left: 0.4rem; padding-right: 0.4rem; }
 
 .advantage .content .detail { margin-top: 0.26667rem; }
 
@@ -140,9 +142,11 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .guidance .content { width: 100%; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.53333rem 0.66667rem; }
 
-.guidance .content .guidance-title { font-size: 0.42667rem; font-weight: bold; line-height: 0.69333rem; letter-spacing: 0.04rem; color: #333333; text-align: center; margin-bottom: 0.4rem; }
+.guidance .content .guidance-title { width: 6.4rem; font-size: 0.42667rem; font-weight: bold; line-height: 0.69333rem; color: #333333; text-align: center; margin-bottom: 0.4rem; margin-left: auto; margin-right: auto; }
 
 .guidance .content .guidance-title strong { color: #17b970; background: url("../images/icon_7.png") no-repeat bottom; background-size: contain; }
+
+.guidance .content .mentality { width: 100%; }
 
 .guidance .content .item { width: 100%; height: 0.90667rem; background-color: #e5fff4; border-radius: 0.45333rem; margin-bottom: 0.4rem; }
 
@@ -159,11 +163,11 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .skill .content .item { margin-bottom: 0.66667rem; }
 
-.skill .content .item .item-title { height: 0.8rem; background: url("../images/icon_8.png") no-repeat; background-size: 100% 100%; padding-left: 0.37333rem; padding-right: 0.50667rem; line-height: 0.8rem; color: #ffffff; }
+.skill .content .item .item-title { height: 0.8rem; line-height: 0.8rem; background: url("../images/icon_8.png") no-repeat; background-size: 100% 100%; padding-left: 0.37333rem; padding-right: 0.50667rem; color: #ffffff; }
 
 .skill .content .item .item-title strong { color: #fff600; }
 
-.skill .content .item .detail { width: 8.4rem; background: url("../images/skill.png") no-repeat #e5fff4 bottom; background-size: contain; padding: 0.64rem 0.38667rem 0.64rem 0.64rem; font-size: 0.37333rem; line-height: 0.64rem; border-radius: 0.13333rem; }
+.skill .content .item .detail { width: 100%; background: url("../images/skill.png") no-repeat #e5fff4 bottom; background-size: contain; padding: 0.64rem 0.38667rem 0.64rem 0.64rem; font-size: 0.37333rem; line-height: 0.64rem; border-radius: 0.13333rem; }
 
 .skill .content .item .detail .detail-title { float: left; color: #17b970; margin-left: -0.13333rem; }
 
@@ -203,29 +207,31 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 /* 对比 */
 .compare { padding: 0 0.4rem; }
 
-.compare .content { width: 100%; height: 8.29333rem; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.66667rem 0.4rem; }
+.compare .content { width: 100%; height: 8.29333rem; position: relative; background-color: #ffffff; border-radius: 0.13333rem; padding: 0.82667rem 0.4rem 0.66667rem; }
 
-.compare .content .detail { width: 100%; height: 100%; background-color: #e5fff4; border-radius: 0.13333rem; }
+.compare .content .detail { width: 100%; height: 100%; border-radius: 0.13333rem; position: relative; }
 
-.compare .content .detail .column { float: left; }
+.compare .content .detail .column { background-color: #e5fff4; position: absolute; }
 
-.compare .content .detail .column span { height: 1.09333rem; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.compare .content .detail .column span { height: 1.09333rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; }
 
-.compare .content .detail .column.good { border-radius: 0.13333rem; background-color: #17b970; }
+.compare .content .detail .column span strong { color: #fff600; }
 
-.compare .content .detail .column.good span { height: 1.14667rem; color: #ffffff; border-bottom: 1px solid #ffffff; }
+.compare .content .detail .contrast { width: 15%; border-top-left-radius: 0.13333rem; border-bottom-left-radius: 0.13333rem; top: 0; left: 0; }
 
-.compare .content .detail .column.good span:last-child { border-bottom: none; }
+.compare .content .detail .good { width: 43%; left: 15%; top: -0.16rem; border-radius: 0.13333rem; background-color: #17b970; z-index: 100; }
 
-.compare .content .detail .column.normal span { border-bottom: 1px solid #ffffff; }
+.compare .content .detail .good span { height: 1.14667rem; color: #ffffff; border-bottom: 1px solid #ffffff; padding-left: 0.29333rem; padding-right: 0.29333rem; }
 
-.compare .content .detail .column.normal span:last-child { border-bottom: none; }
+.compare .content .detail .good span:last-child { border-bottom: none; }
 
-.compare .content .detail .column:nth-of-type(1) { width: 15%; }
+.compare .content .detail .normal { width: 42%; border-top-right-radius: 0.13333rem; border-bottom-right-radius: 0.13333rem; top: 0; right: 0; }
 
-.compare .content .detail .column:nth-of-type(2) { width: 42%; }
+.compare .content .detail .normal span { border-bottom: 1px solid #ffffff; color: #999999; padding-left: 0.29333rem; padding-right: 0.29333rem; }
 
-.compare .content .detail .column:nth-of-type(3) { width: 42%; }
+.compare .content .detail .normal span:first-child { color: #333333; }
+
+.compare .content .detail .normal span:last-child { border-bottom: none; }
 
 /* 案例 */
 .case { padding: 0 0.4rem; }

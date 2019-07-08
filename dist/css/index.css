@@ -98,7 +98,7 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .teacher-introduce .content .item .detail .name { font-size: 0.42667rem; font-weight: bold; line-height: 0.42667rem; letter-spacing: 0.04rem; color: #333333; margin-right: 0.13333rem; }
 
-.teacher-introduce .content .item .detail .honor { height: 0.53333rem; line-height: 0.53333rem; background-color: #effff8; border-radius: 0.05333rem; border: solid 1px #17b970; padding: 0 0.17333rem; color: #17b970; }
+.teacher-introduce .content .item .detail .honor { height: 0.53333rem; line-height: 0.53333rem; background-color: #effff8; border-radius: 0.05333rem; border: solid 1px #17b970; padding: 0 0.17333rem; color: #17b970; font-size: 0.32rem; }
 
 .teacher-introduce .content .item .detail p { font-size: 0.37333rem; line-height: 0.58667rem; letter-spacing: 0.02667rem; color: #666666; text-align: justify; padding-top: 0.08rem; }
 
@@ -163,7 +163,7 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .skill .content .item { margin-bottom: 0.66667rem; }
 
-.skill .content .item .item-title { height: 0.8rem; line-height: 0.8rem; background: url("../images/icon_8.png") no-repeat; background-size: 100% 100%; padding-left: 0.37333rem; padding-right: 0.50667rem; color: #ffffff; }
+.skill .content .item .item-title { height: 0.8rem; line-height: 0.8rem; background: url("../images/icon_8.png") no-repeat; background-size: 100% 100%; padding-left: 0.37333rem; padding-right: 0.50667rem; font-size: 0.4rem; color: #ffffff; }
 
 .skill .content .item .item-title strong { color: #fff600; }
 
@@ -217,19 +217,21 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .compare .content .detail .column span strong { color: #fff600; }
 
-.compare .content .detail .contrast { width: 15%; border-top-left-radius: 0.13333rem; border-bottom-left-radius: 0.13333rem; top: 0; left: 0; }
+.compare .content .detail .contrast { width: 15%; border-top-left-radius: 0.13333rem; border-bottom-left-radius: 0.13333rem; top: 0; left: 0; font-size: 0.37333rem; }
 
-.compare .content .detail .good { width: 43%; left: 15%; top: -0.16rem; border-radius: 0.13333rem; background-color: #17b970; z-index: 100; }
+.compare .content .detail .good { width: 43%; left: 15%; top: -0.16rem; border-radius: 0.13333rem; background-color: #17b970; z-index: 100; font-size: 0.34667rem; }
 
 .compare .content .detail .good span { height: 1.14667rem; color: #ffffff; border-bottom: 1px solid #ffffff; padding-left: 0.29333rem; padding-right: 0.29333rem; }
 
+.compare .content .detail .good span:first-child { font-size: 0.37333rem; }
+
 .compare .content .detail .good span:last-child { border-bottom: none; }
 
-.compare .content .detail .normal { width: 42%; border-top-right-radius: 0.13333rem; border-bottom-right-radius: 0.13333rem; top: 0; right: 0; }
+.compare .content .detail .normal { width: 42%; border-top-right-radius: 0.13333rem; border-bottom-right-radius: 0.13333rem; top: 0; right: 0; font-size: 0.34667rem; }
 
 .compare .content .detail .normal span { border-bottom: 1px solid #ffffff; color: #999999; padding-left: 0.29333rem; padding-right: 0.29333rem; }
 
-.compare .content .detail .normal span:first-child { color: #333333; }
+.compare .content .detail .normal span:first-child { color: #333333; font-size: 0.37333rem; }
 
 .compare .content .detail .normal span:last-child { border-bottom: none; }
 
@@ -238,13 +240,13 @@ h1, h2, h3, div, p, span, strong, a { -webkit-box-sizing: border-box; box-sizing
 
 .case .content { width: 100%; background-color: #85deae; border-radius: 0.13333rem; padding: 0.06667rem; }
 
-.case .content .thead { height: 0.88rem; line-height: 0.88rem; border-top-left-radius: 0.13333rem; border-top-right-radius: 0.13333rem; background-color: #fff600; color: #17b970; border-bottom: 1px solid #85deae; }
+.case .content .thead { height: 0.88rem; line-height: 0.88rem; border-top-left-radius: 0.13333rem; border-top-right-radius: 0.13333rem; background-color: #fff600; color: #17b970; border-bottom: 1px solid #85deae; font-size: 0.37333rem; }
 
 .case .content .thead span { display: block; width: 17%; float: left; border-right: 1px solid #85deae; text-align: center; }
 
 .case .content .thead span:last-child { width: 32%; border-right: none; }
 
-.case .content .tbody { background-color: #ffffff; border-bottom-left-radius: 0.13333rem; border-bottom-right-radius: 0.13333rem; }
+.case .content .tbody { background-color: #ffffff; border-bottom-left-radius: 0.13333rem; border-bottom-right-radius: 0.13333rem; font-size: 0.29333rem; }
 
 .case .content .tbody .row { border-bottom: 1px solid #85deae; }
 
